@@ -1,0 +1,37 @@
+import = ["/Users/rohitmanivel/.config/alacritty/catppuccin.toml"]
+
+[cursor]
+style={ shape = "Block", blinking="On" }
+blink_interval = 750
+blink_timeout = 0
+thickness=0.15
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 14
+
+[font.glyph_offset]
+y = 9
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+
+[font.offset]
+y = 16
+
+[scrolling]
+history = 2000
+
+[window]
+decorations = "Buttonless"
+opacity = 0.9
+
+[window.dimensions]
+columns = 120
+lines = 50
+
+[window.padding]
+x = 5
+y = 5
