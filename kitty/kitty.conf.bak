@@ -1,0 +1,11 @@
+# BEGIN_KITTY_THEME
+# Catppuccin-Mocha
+include current-theme.conf
+# END_KITTY_THEME
+
+# Fonts and controls
+font_family JetBrainsMono Nerd Font
+font_size 13
+
+# Window decorations
+hide_window_decorations titlebar-only
