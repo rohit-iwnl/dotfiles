@@ -1,2 +1,9 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
+
+local vim = vim
+local Plug = vim.fn["plug#"]
+
+vim.call("plug#begin")
+Plug("MunifTanjim/nui.nvim")
+vim.call("plug#end")
 require("config.lazy")
