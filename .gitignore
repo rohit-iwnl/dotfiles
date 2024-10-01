@@ -1,0 +1,8 @@
+linearmouse
+zed/themes
+zed/conversations
+zed/prompts
+zed/embeddings
+zed/.*
+github-copilot
+raycast/*

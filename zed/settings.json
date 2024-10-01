@@ -7,19 +7,31 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "vim_mode": true,
-  "theme": "Gruvbox Dark",
-  "telemetry": {
-    "metrics": false,
-    "diagnostics": false
-  },
-  "buffer_font_family": "JetBrains Mono",
-  "terminal": {
-    "font_family": "JetBrainsMono Nerd Font",
-    "working_directory": "current_project_directory"
-  },
-  "ui_font_size": 16,
-  "buffer_font_size": 16,
-  "relative_line_numbers": true,
-  "use_autoclose": true
+	"vim_mode": true,
+	"theme": "Everforest Dark",
+	"telemetry": {
+		"metrics": false,
+		"diagnostics": false
+	},
+	"features": {
+		"inline_completion_provider": "none"
+	},
+	"scrollbar": {
+		"show": "auto",
+		"cursors": true,
+		"git_diff": true,
+		"search_results": true,
+		"selected_symbol": true,
+		"diagnostics": true
+	},
+	"hard_tabs": true,
+	"buffer_font_family": "JetBrains Mono",
+	"terminal": {
+		"font_family": "JetBrainsMono Nerd Font",
+		"working_directory": "current_project_directory"
+	},
+	"ui_font_size": 14,
+	"buffer_font_size": 14,
+	"relative_line_numbers": true,
+	"use_autoclose": true
 }
