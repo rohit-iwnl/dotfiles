@@ -1,0 +1,22 @@
+# BEGIN_KITTY_THEME
+# Gruvbox Material Dark Medium
+include current-theme.conf
+# END_KITTY_THEME
+
+# Fonts and controls
+font_family JetBrains Mono
+font_size 14
+
+# Window decorations
+hide_window_decorations titlebar-only
+
+# window settings
+remember_window_size no
+initial_window_width 120c
+initial_window_height 40c
+
+# Cursor
+cursor_shape beam
+
+#bg opacity
+background_opacity 0.95

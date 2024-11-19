@@ -1,0 +1,75 @@
+{
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.0",
+  "schemes" : [
+    {
+      "scrolling" : {
+        "reverse" : {
+          "vertical" : true
+        }
+      },
+      "if" : {
+        "device" : {
+          "productName" : "Orochi V2",
+          "productID" : "0x94",
+          "category" : "mouse",
+          "serialNumber" : "000000000000",
+          "vendorID" : "0x1532"
+        }
+      }
+    },
+    {
+      "if" : {
+        "app" : "com.apple.finder",
+        "device" : {
+          "serialNumber" : "000000000000",
+          "category" : "mouse",
+          "productID" : "0x94",
+          "productName" : "Orochi V2",
+          "vendorID" : "0x1532"
+        }
+      },
+      "buttons" : {
+        "universalBackForward" : true
+      }
+    },
+    {
+      "pointer" : {
+        "speed" : 0.0689655172413792768,
+        "disableAcceleration" : false,
+        "acceleration" : 0.6875
+      },
+      "scrolling" : {
+        "acceleration" : {
+          "vertical" : 1
+        },
+        "speed" : {
+          "vertical" : 15
+        },
+        "reverse" : {
+          "vertical" : true
+        }
+      },
+      "buttons" : {
+        "mappings" : [
+          {
+            "button" : 3,
+            "option" : false,
+            "shift" : false,
+            "action" : "missionControl",
+            "command" : true,
+            "control" : false
+          }
+        ],
+        "universalBackForward" : true
+      },
+      "if" : {
+        "device" : {
+          "productName" : "2.4G Wireless Device",
+          "productID" : "0xfa60",
+          "vendorID" : "0x1d57",
+          "category" : "mouse"
+        }
+      }
+    }
+  ]
+}
