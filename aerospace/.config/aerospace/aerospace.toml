@@ -9,7 +9,11 @@ after-login-command = []
 # You can use it to add commands that run after AeroSpace startup.
 # 'after-startup-command' is run after 'after-login-command'
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
-after-startup-command = []
+# after-startup-command = []
+# Run Sketchybar together with AeroSpace
+# sketchbar has a built-in detection of already running process,
+# so it won't be run twice on AeroSpace restart
+
 
 # Start AeroSpace at login
 start-at-login = false
@@ -52,7 +56,7 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 [gaps]
 inner.horizontal = 10
 inner.vertical = 10
-outer.left =10
+outer.left = 10
 outer.bottom = 10
 outer.top = 10
 outer.right = 15
@@ -187,8 +191,8 @@ alt-shift-semicolon = 'mode service'
 esc = ['reload-config', 'mode main']
 r = ['flatten-workspace-tree', 'mode main'] # reset layout
 f = [
-	'layout floating tiling',
-	'mode main',
+  'layout floating tiling',
+  'mode main',
 ] # Toggle between floating and tiling layout
 backspace = ['close-all-windows-but-current', 'mode main']
 
@@ -206,7 +210,7 @@ if.app-id = "com.github.wez.wezterm"
 run = "move-node-to-workspace T"
 
 [[on-window-detected]]
-if.app-id = "org.mozilla.com.zen.browser"
+if.app-id = "app.zen-browser.zen"
 run = "move-node-to-workspace B"
 
 [[on-window-detected]]
@@ -241,4 +245,12 @@ run = "move-node-to-workspace T"
 if.app-id = "com.electron.dockerdesktop"
 run = "move-node-to-workspace D"
 
+[[on-window-detected]]
+if.app-id = 'app.zen-browser.zen'
+if.window-title-regex-substring = 'Picture-in-Picture'
+run = 'layout floating'
 
+
+[[on-window-detected]]
+if.app-id = "com.mitchellh.ghostty"
+run = ["layout tiling", "move-node-to-workspace T"]
